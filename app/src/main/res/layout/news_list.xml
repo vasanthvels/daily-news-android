@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.hybridappzone.dailynews.BBC_Activity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/BlueHybrid"
+        android:textStyle="bold"
+        tools:text="title" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1.5"
+        tools:text="Image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"
+        android:layout_weight="0.4"
+        android:textColor="@color/BlackHybrid"
+        tools:text="desc" />
+
+</LinearLayout>
